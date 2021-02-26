@@ -1,0 +1,200 @@
+/* make a variable of font size  */
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+:root {
+  margin: 0;
+  margin-top: initial;
+  max-width: 1440px;
+  font-family: spartan;
+  box-sizing: border-box;
+  font-size: 15px;
+
+}
+
+svg {
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+h3 {
+  width: 30%;
+  color: hsl(300, 43%, 22%);
+  font-size: 3em;
+  font-weight: 700;
+  margin: 2.5em 2.5em 0;
+}
+img {
+  border-radius: 50%;
+  position: absolute;
+  height: 4em ;
+}
+
+.tagline {
+  color: hsl(303, 10%, 53%);
+  font-weight: 500;
+  width: 40%;
+  margin-left:7em; 
+}
+.stars {
+  border-radius: 10px;
+  position: absolute;
+  top: 3.8em;
+  left: 48em;
+}
+
+.stars > p {
+  background-color: hsl(300, 24%, 96%);
+  color: hsl(300, 43%, 22%);
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  height: 2em;
+  border-radius: 8px;
+  padding: 0.3em;
+}
+.stars > p :nth-child(5){
+margin-right: 2em;
+}
+.stars > p :nth-child(1){
+margin-left: 1em;
+}
+#first-star{
+  position: relative;
+  right: 4em;
+}
+#second-star{
+  position: relative;
+  right: 2em;
+}
+
+
+
+
+
+
+/* change all units to em i.e convert to em */
+/* change font family */
+.customer-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5em;
+  margin: 3em 0;
+}
+.buyer2{
+  position: relative;
+  top: 1em;
+}
+.buyer3 {
+  position: relative;
+  top: 2em;
+}
+.buyer1, .buyer2, .buyer3 {
+  background-color: hsl(300, 43%, 22%);
+  color: hsl(300, 24%, 96%);
+  padding: 1.5em;
+  border-radius: 10px;
+}
+.bio {
+  text-align: left;
+  margin-top: 2em;
+}
+.name {
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-weight: 700;
+}
+.rank {
+  text-align: center;
+  color: hsl(333, 80%, 67%);
+  margin-top: 0;
+  padding-bottom: 0;
+}
+#top-pattern{
+  position: absolute;
+  top: -2em;
+  right:50.5em ;
+  margin-top: 0;
+  margin-left: 0;
+}
+#bottom-pattern{
+  position: absolute;
+  right: -3em;
+  top: 4.5em;
+  margin-bottom: 0;
+}
+
+/* MOBILE VIEW */
+@media screen and (max-width: 375px) {
+:root{
+  max-width: 375px;
+  box-sizing: border-box;
+}
+
+  /* Top Icon */
+.top-pattern{
+  position: relative;
+  top: 0;
+  right: 0;
+}
+.bottom-pattern{
+  position: absolute ;
+  top: 0;
+  right: 0;
+  width: 375px;
+}
+/*  mobile header */
+
+h3{
+  font-size: 0.9rem;
+  margin: 2rem auto;
+  width: 60%;
+  height: 3rem;
+}
+.tagline{
+  font-size: 0.5rem;
+  width: 80%;
+}
+.stars{
+  position: relative;
+  top: initial;
+  left: initial;
+  max-width: 100%;
+  
+}
+.stars > p {
+  font-size: 0.5rem;
+  height: 4rem;
+  display: block;
+}
+.first-star{
+  position: relative;
+  left: 0;
+}
+.second-star{
+  position: relative;
+  left: 0;
+}
+
+/* Customer section ---Mobile view--- */
+.customer-section{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.name{
+  text-align: center;
+
+}
+/* customer images */
+.buyer1, .buyer2, .buyer3{
+  width: 100%;
+}
+}
